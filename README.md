@@ -1,6 +1,6 @@
 # Jest Framework Project
 
-This project demonstrates how to use the Jest framework for testing JavaScript applications. Jest is a delightful JavaScript testing framework with a focus on simplicity.
+This project demonstrates sperating out numbers from String that contains Various delimiters and returning sum of those numbers. Incase of negative number there is an exception that is thrown and all of these is tested using jest.
 
 ## Table of Contents
 
@@ -25,3 +25,4 @@ To install Jest in your project, you need to have [Node.js](https://nodejs.org/)
 
 ```bash
 npm install --save-dev jest
+npm test
