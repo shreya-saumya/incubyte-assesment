@@ -24,5 +24,7 @@ To install Jest in your project, you need to have [Node.js](https://nodejs.org/)
 ### Using npm
 
 ```bash
+// to install
 npm install --save-dev jest
+// to run
 npm test
