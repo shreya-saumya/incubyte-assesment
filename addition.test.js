@@ -35,4 +35,8 @@ test('should throw an error for multiple negative numbers', () => {
 test('should handle newline as a delimiter', () => {
         expect(add('1\n2,3')).toBe(6);
 });
+test('should handle all newline as a delimiter', () => {
+        expect(add('1\n2,\n4')).toBe(7);
+});
+
 
