@@ -15,7 +15,7 @@ function add(numberString = '') {
     }
 
    function validateNumber(number) {
-        if(number < 0) {
+        if(Number(number) < 0) {
             throw new Error('negative numbers not allowed');
         }
     }
