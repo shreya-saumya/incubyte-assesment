@@ -1,24 +1,24 @@
-function add(str){
-	const inputString = str;
-	const numbers = inputString.match(/-?\d+\b/g);
-	let output = 0
-	for(let i=0;i<numbers.length;i++){
-	  if(Number(numbers[i])>0){
-	    output+=Number(numbers[i])
-	  }
-	  else output='negative numbers not allowed'+'<'+Number(numbers[i])+'>'
-	}
-	return output
+function add(numberString = '') {
+        let output = 0;
 
-}
-function additiontest(str, expectedvalue){
-    add(str)===expectedvalue? console.log("✅ Test Passed") 
-    : console.error("❌ Test Failed");
+        convertString(numberString).forEach((number) => {
+            validateNumber(number);
+            output += +number;
+        });
 
-}
+        return output;
+    }
 
-additiontest("1\n2,3",6)
-additiontest('5\n7\n\n7\n5',24)
-additiontest("1,5", 6)
-additiontest("1,5,-2,3, -1", 'negative numbers not allowed<-1>')
-additiontest("1,5,-2,3, -1", 7)
+   function convertString(string) {
+        var numberPattern = /-?\b\d+(\.\d+)?\b/g;
+        return numbers = string.match(numberPattern);
+    }
+
+   function validateNumber(number) {
+        if(number < 0) {
+            throw new Error('negative numbers not allowed');
+        }
+    }
+module.exports = add;
+
+
