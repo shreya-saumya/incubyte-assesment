@@ -1,6 +1,6 @@
 function add(numberString = '') {
         let output = 0;
-
+        if(numberString!=='')
         convertString(numberString).forEach((number) => {
             validateNumber(number);
             output += +number;
