@@ -1,5 +1,8 @@
 function add(numberString = '') {
-        let output = 0;
+    let output = 0;
+
+    if(!numberString) return output;
+
         if(numberString!=='')
         convertString(numberString).forEach((number) => {
             validateNumber(number);
