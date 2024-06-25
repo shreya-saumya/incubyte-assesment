@@ -29,7 +29,7 @@ test('should return the correct sum of numbers in a string', () => {
 });
 
 test('should throw an error for multiple negative numbers', () => {
-        expect(() => add('-1,-2,-3')).toThrow('negative numbers not allowed');
+    expect(() => add('-1,-2,-3')).toThrow('negative numbers not allowed: -1, -2, -3');
 });
 
 test('should handle newline as a delimiter', () => {
